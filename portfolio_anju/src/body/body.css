@@ -1,0 +1,49 @@
+.body-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    align-content: start;
+    background-color: antiquewhite;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+}
+.intro{
+    width: 50%;
+    margin-top: 120px;
+}
+.intro span{
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+}
+.intro h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 70px;
+}
+.intro h3{
+    color: green;
+    font-size: 22px;
+}
+.intro p{
+    font-size: 16px;
+    color: grey;
+}
+.profile img{
+    height: 600px;
+    object-fit:fill;
+    border-radius: 150px 10px 150px 10px;
+}
+.intro .action{
+    display: flex;
+    align-items: start;
+    margin-top: 40px;
+}
+.intro #download{
+    margin-left: 40px;
+}
+.profile{
+    margin-top: 70px;
+}

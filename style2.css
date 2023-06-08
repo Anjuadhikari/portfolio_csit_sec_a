@@ -1,0 +1,261 @@
+
+body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #9c8484;
+
+}
+ 
+
+  
+  
+  h1 {
+      font-weight: 400;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      margin: 0;
+  }
+  
+  h2 {
+      font-weight: 400;
+      font-size: 1.2rem;
+      text-transform: capitalize;
+      margin: 0;
+  }
+  
+  img {
+      display: block;
+      width: 100%;
+  }
+  
+  main {
+      max-width: 900px;
+      margin: auto;
+      box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1)
+  }
+  
+  #landing {
+      background: #fff;
+  }
+  
+  #landing-text {
+      display: flex;
+      flex: 0 1 40vw;
+      height: 50vh;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-right: 1rem;
+      padding-left: 1rem;
+  }
+  
+  #landing-text h2 {
+      color: #888;
+  }
+  
+  #landing-image {
+      background: url(278227669_726382931874635_5340661861576719291_n.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 50vh;
+      flex: 0 1 60vw;
+      margin: 0;
+  }
+  
+  .btn {
+      padding: 0.5rem 2rem;
+      border: 1px solid #ccc;
+      display: inline-block;
+      margin: 2rem 0 0;
+      border-radius: 50px;
+      text-decoration: none;
+      color: #333;
+      transition: background 500ms ease;
+  }
+  
+  .btn:hover {
+      background: #f4f4f4;
+  }
+  
+  #header {
+      padding: 1.5rem;
+      text-align: center;
+      background: #333;
+      color: #fff;
+  }
+  
+  #header h2 {
+      border-left: 1px dotted #fff;
+      border-right: 1px dotted #fff;
+      display: inline-block;
+      padding-right: 1rem;
+      padding-left: 1rem;
+  }
+  
+  .caption {
+      padding: 0.8rem;
+      text-align: center;
+  }
+  
+  footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      margin: auto;
+      color: #333;
+  }
+  
+  footer h3 {
+      font-size: 3rem;
+      margin-bottom: 0;
+  }
+  
+  footer p a {
+      text-decoration: none;
+      color: red;
+  }
+  
+  /*Screen Sizes 500px +*/
+  
+  @media(min-width: 31.25rem) {
+      #landing {
+          display: flex;
+          height: 100%;
+      }
+  
+      #landing-text {
+          height: 100vh;
+      }
+  
+      #landing-image {
+          height: 100vh;
+      }
+  }
+  
+  /*Screen Sizes 700px +*/
+  
+  @media(min-width: 43.75rem) {
+      .btn {
+          padding: 1rem 3rem;
+      }
+  } 
+
+#sidebar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+h2 {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+#documentation h2 {
+  text-align: left;
+  margin: 0px;
+}
+
+#sidebar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#sidebar li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#sidebar .nav-item {
+  display: block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#documentation {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+pre {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.hscroll {
+  overflow-x: auto;
+}
+
+table {
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #sidebar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #sidebar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #documentation {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #documentation {
+    margin-left: -10px;
+  }
+}

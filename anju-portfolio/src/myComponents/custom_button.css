@@ -1,0 +1,17 @@
+.btn{
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px;
+
+}
+
+.btn-style1{
+    background-color: yellowgreen;
+    color: black; 
+}
+
+.btn-style2{
+    background-color: darkolivegreen;
+    color: white; 
+}
